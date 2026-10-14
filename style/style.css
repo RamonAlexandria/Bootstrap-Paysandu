@@ -1,0 +1,35 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tamanho controlado da logo */
+.logo-paysandu {
+    height: 75px;
+    width: auto;
+}
+
+/* Garante que o menu fique visível e em formato flexível */
+.navbar-collapse {
+    display: flex !important;
+}
+
+/* Estilização padrão para Mobile (Menu Vertical Centralizado) */
+.menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+/* Media Query para telas maiores (Desktop a partir de 992px) */
+@media (min-width: 992px) {
+    /* Transforma o menu em horizontal no desktop */
+    .menu-navegacao {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        gap: 1.5rem;
+    }
+}
