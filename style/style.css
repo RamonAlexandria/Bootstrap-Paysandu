@@ -1,6 +1,8 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
 
 /* Tamanho controlado da logo */
@@ -23,6 +25,10 @@ html, body {
     gap: 0.5rem;
 }
 
+.backgroung {
+    background: linear-gradient(to top, #1a75ff, #66a3ff);
+}
+
 /* Media Query para telas maiores (Desktop a partir de 992px) */
 @media (min-width: 992px) {
     /* Transforma o menu em horizontal no desktop */
@@ -32,4 +38,55 @@ html, body {
         width: auto;
         gap: 1.5rem;
     }
+}
+
+main{
+    width: 100%;   
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+    url('../images/hero.png') no-repeat center center / cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Garante que os botões mantenham o tamanho natural no desktop, sem interferir nas cores padrão do Bootstrap. */
+@media (min-width: 576px) {
+    .hero-section nav a.btn {
+        width: auto !important;
+    }
+}
+
+/* Sombra forte no texto para garantir leitura perfeita sobre o estádio */
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.btn2 {
+    color: white;
+}
+
+.hero-section .row {
+  gap: 2rem; /* espaço entre texto e imagem */
+}
+
+.hero-img {
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 992px) {
+  .hero-img {
+    max-width: 380px;
+  }
 }
