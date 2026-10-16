@@ -9,6 +9,13 @@ html, body {
 .logo-paysandu {
     height: 75px;
     width: auto;
+    align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .logo-paysandu {
+    margin-left: 80px;
+  }
 }
 
 /* Garante que o menu fique visível e em formato flexível */
@@ -25,7 +32,7 @@ html, body {
     gap: 0.5rem;
 }
 
-.backgroung {
+.background {
     background: linear-gradient(to top, #1a75ff, #66a3ff);
 }
 
@@ -51,42 +58,25 @@ main{
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
     url('../images/hero.png') no-repeat center center / cover;
     position: relative;
-    display: flex;
-    align-items: center;
     color: white;
 }
 
-/* Garante que os botões mantenham o tamanho natural no desktop, sem interferir nas cores padrão do Bootstrap. */
-@media (min-width: 576px) {
-    .hero-section nav a.btn {
-        width: auto !important;
-    }
-}
-
-/* Sombra forte no texto para garantir leitura perfeita sobre o estádio */
 .text-shadow {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
-.btn2 {
-    color: white;
-}
-
-.hero-section .row {
-  gap: 2rem; /* espaço entre texto e imagem */
-}
-
 .hero-img {
-  max-width: 280px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 992px) {
-  .hero-img {
-    max-width: 380px;
-  }
+    .hero-img {
+        max-width: 380px;
+    }
 }
+

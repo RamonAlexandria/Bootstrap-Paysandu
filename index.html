@@ -6,13 +6,13 @@
     <title>Paysandu</title>
     <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Meu CSS Próprio -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="bg-info text-white m-0 p-0">
 <!-- ETAPA 1 — HEADER & NAVBAR (SEM JS) -->
-    <header class="navbar navbar-expand-lg navbar-dark px-3 px-lg-5 py-3 w-100 backgroung">
+    <header class="navbar navbar-expand-lg navbar-dark px-3 px-lg-5 py-3 w-100 background">
         <!-- 
             Justificativa: 
             Criei um comportamento visual alternativo utilizando a classe obrigatória 'collapse' em conjunto com classes utilitárias de visibilidade e CSS customizado. Isso mantém o menu vertical e visível no mobile e horizontal no desktop, utilizando somente tags semânticas (sem divs).
@@ -33,10 +33,10 @@
                         <a class="nav-link text-white active" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Serviços</a>
+                        <a class="nav-link text-white-50" href="#noticias">Notícia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Seja Sócio</a>
+                        <a class="nav-link text-white-50" href="#socio">Seja Sócio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white-50" href="#">Sobre</a>
@@ -49,40 +49,483 @@
 
     <main>
                 <!-- ETAPA 2 — HERO SECTION -->
-<section class="hero-section text-white py-5">
-  <article class="container min-vh-75 py-5">
-    <section class="row w-100 justify-content-center align-items-center m-0">
-      
-      <!-- Texto -->
-      <article class="col-12 col-lg-6 text-center order-2 order-lg-1">
-        <span class="badge bg-primary mb-3 px-3 py-2 fs-6 shadow-sm">Papão da Curuzu</span>
+    <section class="hero-section text-white py-5">
+                <article class="container py-5">
+                    <section class="row align-items-center justify-content-between g-4">
+                        
+                        <!-- Texto: Mobile (order-2) | Desktop (order-lg-1) -->
+                        <article class="col-12 col-lg-6 text-center text-lg-start order-2 order-lg-1">
 
-        <h1 class="display-3 fw-bold text-white mb-3 text-shadow">
-          A maior paixão da Amazônia.
-        </h1>
+                            <h1 class="display-3 fw-bold text-white mb-3 text-shadow">
+                                A maior paixão da Amazônia.
+                            </h1>
 
-        <p class="lead text-light mb-4 text-shadow">
-          Viva todas as emoções do Paysandu Sport Club. Fique por dentro de tudo, apoie o time e seja um Sócio Campeão.
-        </p>
+                            <p class="lead text-light mb-4 text-shadow">
+                                Viva todas as emoções do Paysandu Sport Club. Fique por dentro de tudo, apoie o time e seja um Sócio Campeão.
+                            </p>
 
-        <!-- Mantive seus botões -->
-        <nav class="d-flex justify-content-center flex-wrap gap-3 mt-4">
-          <a href="#" class="btn-solid theme-primary btn btn-primary">Sócio Campeão</a>
-          <a href="#" class="btn-outline theme-primary btn2 btn btn-outline-light">Ver Elenco</a>
-        </nav>
-      </article>
+                            <!-- Grupo de Botões -->
+                            <nav class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3 mt-4">
+                                <a href="#noticias" class="btn btn-primary btn-lg px-4 shadow">Notícias e Destaques</a>
+                                <a href="#Classificacao" class="btn btn-outline-light btn-lg px-4 shadow">Classificação</a>
+                            </nav>
+                        </article>
 
-      <!-- Imagem -->
-      <figure class="col-12 col-lg-6 order-1 order-lg-2 text-center">
-        <img src="images/img.png" alt="Paysandu" class="img-fluid hero-img">
-      </figure>
+                        <!-- Imagem: Mobile (order-1) | Desktop (order-lg-2) -->
+                        <figure class="col-12 col-lg-6 text-center order-1 order-lg-2 m-0">
+                            <img src="images/img.png" alt="Paysandu" class="img-fluid hero-img">
+                        </figure>
+
+                    </section>
+                </article>
+    </section>
+
+    <!-- ETAPA 3 — SEÇÃO DE CONTEÚDO -->
+        <section class="container py-5" id="noticias">
+    <header class="text-center mb-5">
+        <h2 class="fw-bold text-dark">Notícias e Destaques do Papão</h2>
+        <p class="text-muted">Acompanhe as últimas novidades do Paysandu Sport Club.</p>
+    </header>
+
+    <!-- Linha com espaçamento responsivo (g-4) -->
+    <section class="row g-4">
+        
+        <!-- CARD 1 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-primary align-self-start mb-2">Futebol</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Vitória na Curuzu</h3>
+                    <p class="card-text text-muted flex-grow-1">Confira os melhores momentos da última partida disputada em nossa casa com apoio da torcida.</p>
+                    <a href="#" class="btn btn-outline-primary mt-auto w-100">Ler Mais</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-success align-self-start mb-2">Sócio</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Vantagens Exclusivas</h3>
+                    <p class="card-text text-muted flex-grow-1">Descubra os novos benefícios e descontos na rede parceira para o torcedor Sócio Campeão.</p>
+                    <a href="#" class="btn btn-outline-success mt-auto w-100">Saiba Mais</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-warning text-dark align-self-start mb-2">Base</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Base Campeã</h3>
+                    <p class="card-text text-muted flex-grow-1">Conquistas importantes das categorias de base mostram o futuro promissor do nosso clube.</p>
+                    <a href="#" class="btn btn-outline-warning text-dark mt-auto w-100">Ver Detalhes</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-danger align-self-start mb-2">Ingressos</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Próximo Jogo</h3>
+                    <p class="card-text text-muted flex-grow-1">Garanta o seu ingresso antecipado para o grande clássico do fim de semana no Estádio.</p>
+                    <a href="#" class="btn btn-outline-danger mt-auto w-100">Comprar</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-info text-dark align-self-start mb-2">Loja</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Novo Manto</h3>
+                    <p class="card-text text-muted flex-grow-1">A nova camisa oficial já está disponível nas Lojas Lobo de todo o estado. Venha garantir a sua.</p>
+                    <a href="#" class="btn btn-outline-info text-dark mt-auto w-100">Ver Loja</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 6 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-secondary align-self-start mb-2">Clube</span>
+                    <h3 class="card-title h5 fw-bold text-dark">História de Glórias</h3>
+                    <p class="card-text text-muted flex-grow-1">Relembre as maiores conquistas e os momentos históricos que marcaram a trajetória do Papão.</p>
+                    <a href="#" class="btn btn-outline-secondary mt-auto w-100">Explorar</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 7 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-primary align-self-start mb-2">Futebol</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Treinamento Intensivo</h3>
+                    <p class="card-text text-muted flex-grow-1">Elenco focado e em preparação rigorosa para os próximos desafios da temporada atual.</p>
+                    <a href="#" class="btn btn-outline-primary mt-auto w-100">Ler Mais</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 8 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-success align-self-start mb-2">Sócio</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Encontro com o Ídolo</h3>
+                    <p class="card-text text-muted flex-grow-1">Ação especial promovida para os torcedores cadastrados no programa Sócio Campeão.</p>
+                    <a href="#" class="btn btn-outline-success mt-auto w-100">Saiba Mais</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 9 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-warning text-dark align-self-start mb-2">Base</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Peneirada Oficial</h3>
+                    <p class="card-text text-muted flex-grow-1">Oportunidade para novos talentos mostrarem seu futebol nas categorias de base do clube.</p>
+                    <a href="#" class="btn btn-outline-warning text-dark mt-auto w-100">Ver Detalhes</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 10 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-danger align-self-start mb-2">Ingressos</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Check-in Aberto</h3>
+                    <p class="card-text text-muted flex-grow-1">Associados já podem realizar a confirmação de presença para o próximo confronto decisivo.</p>
+                    <a href="#" class="btn btn-outline-danger mt-auto w-100">Comprar</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 11 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-info text-dark align-self-start mb-2">Loja</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Coleção Retrô</h3>
+                    <p class="card-text text-muted flex-grow-1">Lançamento de camisas comemorativas que homenageiam as maiores glórias do passado.</p>
+                    <a href="#" class="btn btn-outline-info text-dark mt-auto w-100">Ver Loja</a>
+                </section>
+            </section>
+        </article>
+
+        <!-- CARD 12 -->
+        <article class="col-12 col-md-6 col-lg-3">
+            <section class="card h-100 shadow-sm border-0 d-flex flex-column">
+                <figure class="m-0">
+                    <img src="images/card.png" class="card-img-top" alt="Destaque Paysandu">
+                </figure>
+                <section class="card-body d-flex flex-column">
+                    <span class="badge bg-secondary align-self-start mb-2">Clube</span>
+                    <h3 class="card-title h5 fw-bold text-dark">Transparência</h3>
+                    <p class="card-text text-muted flex-grow-1">Acesse os relatórios de gestão, balanços financeiros e ações de modernização da instituição.</p>
+                    <a href="#" class="btn btn-outline-secondary mt-auto w-100">Explorar</a>
+                </section>
+            </section>
+        </article>
 
     </section>
-  </article>
 </section>
+
+    <!-- ETAPA 4 — TABELA PROFISSIONAL -->
+
+<section class="container py-5" id="Classificacao">
+        <header class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Classificação e Estatísticas</h2>
+            <p class="text-muted">Acompanhe o desempenho do Papão e dos adversários na temporada atual.</p>
+        </header>
+
+        <!-- Importação do CDN do Bootstrap Icons (pode deixar no head ou aqui) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <!-- Tabela responsiva sem quebrar em mobile (sem div) -->
+        <section class="table-responsive shadow-sm rounded-3 overflow-hidden">
+            <table class="table table-striped table-hover table-bordered align-middle m-0">
+                <caption class="visually-hidden">Tabela de classificação detalhada</caption>
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th scope="col"><i class="bi bi-hash"></i> Pos</th>
+                        <th scope="col" class="text-start"><i class="bi bi-shield-fill"></i> Clube</th>
+                        <th scope="col"><i class="bi bi-trophy-fill"></i> Pts</th>
+                        <th scope="col"><i class="bi bi-play-circle-fill"></i> J</th>
+                        <th scope="col"><i class="bi bi-check-circle-fill"></i> V</th>
+                        <th scope="col"><i class="bi bi-dash-circle-fill"></i> E</th>
+                        <th scope="col"><i class="bi bi-x-circle-fill"></i> D</th>
+                        <th scope="col"><i class="bi bi-graph-up-arrow"></i> SG</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td class="text-start fw-bold text-primary">
+                            <i class="bi bi-star-fill text-warning me-2"></i>Paysandu
+                        </td>
+                        <td>45</td>
+                        <td>22</td>
+                        <td>13</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td class="text-start">Remo</td>
+                        <td>42</td>
+                        <td>22</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td class="text-start">Amazonas</td>
+                        <td>38</td>
+                        <td>22</td>
+                        <td>11</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td class="text-start">Náutico</td>
+                        <td>35</td>
+                        <td>22</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td class="text-start">Santa Cruz</td>
+                        <td>32</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td class="text-start">Botafogo-PB</td>
+                        <td>30</td>
+                        <td>22</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td class="text-start">Figueirense</td>
+                        <td>28</td>
+                        <td>22</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>-2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td class="text-start">CSA</td>
+                        <td>25</td>
+                        <td>22</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>-5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td class="text-start">São José-RS</td>
+                        <td>22</td>
+                        <td>22</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>-8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td class="text-start">Floresta</td>
+                        <td>18</td>
+                        <td>22</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>-14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <!-- ETAPA 5 — FORMULÁRIOS (SEM VALIDAÇÃO JS) -->
+    <section class="container py-5 text-dark" id="socio">
+        <header class="text-center mb-5 text-black">
+            <h2 class="fw-bold">Área do Torcedor</h2>
+            <p class="text-black">Cadastre-se no Sócio Campeão ou entre em contato com o clube.</p>
+        </header>
+
+        <!-- Formulário de Cadastro -->
+        <section class="bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-5">
+            <header class="mb-4 border-bottom pb-3">
+                <h3 class="h4 fw-bold text-primary">Formulário de Cadastro — Sócio Campeão</h3>
+                <p class="text-muted m-0">Preencha seus dados para fazer parte do programa oficial.</p>
+            </header>
+
+            <form class="row g-3" novalidate>
+                <!-- Input Group (Nome Completo) -->
+                <section class="col-12 col-md-6">
+                    <label for="nomeCadastro" class="form-label fw-semibold">Nome Completo</label>
+                    <section class="input-group">
+                        <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" class="form-control is-valid" id="nomeCadastro" value="Ramon Santos" required>
+                    </section>
+                    <p class="valid-feedback m-0">Nome preenchido corretamente!</p>
+                </section>
+
+                <!-- Inputs Variados (E-mail com estado inválido) -->
+                <section class="col-12 col-md-6">
+                    <label for="emailCadastro" class="form-label fw-semibold">E-mail</label>
+                    <input type="email" class="form-control is-invalid" id="emailCadastro" value="ramon.com" required>
+                    <p class="invalid-feedback m-0">Por favor, informe um endereço de e-mail válido.</p>
+                    <small class="form-text text-muted d-block mt-1">Nunca compartilharemos seus dados com terceiros.</small>
+                </section>
+
+                <!-- Select -->
+                <section class="col-12 col-md-6">
+                    <label for="planoSelect" class="form-label fw-semibold">Escolha o seu Plano</label>
+                    <select class="form-select" id="planoSelect" required>
+                        <option selected disabled value="">Selecione um plano...</option>
+                        <option value="1">Sócio Lobo da Fiel</option>
+                        <option value="2">Sócio Curuzu</option>
+                        <option value="3">Sócio Magnífico</option>
+                    </select>
+                </section>
+
+                <!-- Input Variado (Data de Nascimento) -->
+                <section class="col-12 col-md-6">
+                    <label for="dataNasc" class="form-label fw-semibold">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="dataNasc" required>
+                </section>
+
+                <!-- Radios (Categoria de Sócio) -->
+                <fieldset class="col-12 mt-4">
+                    <legend class="col-form-label fw-semibold pt-0">Modalidade de Sócio</legend>
+                    <section class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="modalidadeRadio" id="radioArquibancada" value="arq" checked>
+                        <label class="form-check-label" for="radioArquibancada">Arquibancada</label>
+                    </section>
+                    <section class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="modalidadeRadio" id="radioCadeira" value="cad">
+                        <label class="form-check-label" for="radioCadeira">Cadeira Coberta</label>
+                    </section>
+                </fieldset>
+
+                <!-- Checkbox (Termos) -->
+                <section class="col-12 mt-3">
+                    <section class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkTermos" required>
+                        <label class="form-check-label" for="checkTermos">
+                            Concordo com os termos e regulamento do programa Sócio Campeão.
+                        </label>
+                    </section>
+                </section>
+
+                <!-- Botão de Envio -->
+                <section class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary px-4 py-2 fw-bold">Finalizar Cadastro</button>
+                </section>
+            </form>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="bg-white p-4 p-lg-5 rounded-4 shadow-sm">
+            <header class="mb-4 border-bottom pb-3">
+                <h3 class="h4 fw-bold text-primary">Fale Conosco — Atendimento ao Sócio</h3>
+                <p class="text-muted m-0">Envie suas dúvidas, sugestões ou solicitações para nossa central.</p>
+            </header>
+
+            <form class="row g-3" novalidate>
+                <!-- Campos alinhados em grid -->
+                <section class="col-12 col-md-6">
+                    <label for="nomeContato" class="form-label fw-semibold">Seu Nome</label>
+                    <input type="text" class="form-control" id="nomeContato" placeholder="Digite seu nome completo" required>
+                </section>
+
+                <section class="col-12 col-md-6">
+                    <label for="assuntoContato" class="form-label fw-semibold">Assunto</label>
+                    <input type="text" class="form-control" id="assuntoContato" placeholder="Ex: Dúvidas sobre carteirinha" required>
+                </section>
+
+                <!-- Textarea -->
+                <section class="col-12">
+                    <label for="mensagemContato" class="form-label fw-semibold">Mensagem</label>
+                    <textarea class="form-control" id="mensagemContato" rows="4" placeholder="Escreva sua mensagem detalhadamente..." required></textarea>
+                    <small class="form-text text-muted d-block mt-1">Retornaremos o contato em até 48 horas úteis.</small>
+                </section>
+
+                <!-- Botão de Envio -->
+                <section class="col-12 mt-4">
+                    <button type="submit" class="btn btn-success px-4 py-2 fw-bold">Enviar Mensagem</button>
+                </section>
+            </form>
+        </section>
+    </section>
+
+
     </main>
 
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
