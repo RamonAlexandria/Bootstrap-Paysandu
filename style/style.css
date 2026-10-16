@@ -18,6 +18,11 @@ html, body {
   }
 }
 
+@media (max-width: 500px) {
+    .logo-paysandu {
+        display: none;
+    }
+}
 /* Garante que o menu fique visível e em formato flexível */
 .navbar-collapse {
     display: flex !important;
@@ -80,3 +85,29 @@ main{
     }
 }
 
+/* ===================================================
+   ETAPA 6 — MODAL SEM JS (CHECKBOX HACK)
+   =================================================== */
+
+/* Esconde o checkbox acionador */
+.modal-checkbox-hack {
+    display: none;
+}
+
+/* Esconde a estrutura do modal por padrão */
+.modal-custom-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1050;
+}
+
+/* Backdrop para fechar ao clicar fora */
+.modal-custom-backdrop {
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Quando o checkbox estiver MARCADO (CHECKED), exibe o modal */
+.modal-checkbox-hack:checked ~ .modal-custom-overlay {
+    display: flex !important;
+}

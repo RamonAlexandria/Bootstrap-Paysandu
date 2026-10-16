@@ -39,7 +39,7 @@
                         <a class="nav-link text-white-50" href="#socio">Seja Sócio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Sobre</a>
+                        <a class="nav-link text-white-50" href="#ingressos">Ingressos</a>
                     </li>
                 </ul>
             </section>
@@ -315,7 +315,7 @@
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td class="text-start">Remo</td>
+                        <td class="text-start">Tuna</td>
                         <td>42</td>
                         <td>22</td>
                         <td>12</td>
@@ -345,7 +345,7 @@
                     </tr>
                     <tr>
                         <th scope="row">5</th>
-                        <td class="text-start">Santa Cruz</td>
+                        <td class="text-start">Ceará</td>
                         <td>32</td>
                         <td>22</td>
                         <td>9</td>
@@ -355,7 +355,7 @@
                     </tr>
                     <tr>
                         <th scope="row">6</th>
-                        <td class="text-start">Botafogo-PB</td>
+                        <td class="text-start">Santa Cruz</td>
                         <td>30</td>
                         <td>22</td>
                         <td>8</td>
@@ -385,7 +385,7 @@
                     </tr>
                     <tr>
                         <th scope="row">9</th>
-                        <td class="text-start">São José-RS</td>
+                        <td class="text-start">Fortaleza</td>
                         <td>22</td>
                         <td>22</td>
                         <td>5</td>
@@ -395,8 +395,8 @@
                     </tr>
                     <tr>
                         <th scope="row">10</th>
-                        <td class="text-start">Floresta</td>
-                        <td>18</td>
+                        <td class="text-start">Remo</td>
+                        <td>-18</td>
                         <td>22</td>
                         <td>4</td>
                         <td>6</td>
@@ -522,8 +522,224 @@
         </section>
     </section>
 
+        <!------- ETAPA 6 — MODAIS ------->
+        <section class="container py-5 text-dark" id="ingressos">
+    <header class="text-center mb-4">
+        <h2 class="fw-bold text-black">Ingressos e Sócio Campeão</h2>
+        <p class="text-black">Garanta seu lugar na Curuzu para o próximo clássico.</p>
+    </header>
 
-    </main>
+    <!-- Botão acionador (Label vinculado ao Checkbox invisível) -->
+    <nav class="text-center">
+        <label for="modalToggle" class="btn btn-primary btn-lg shadow px-4 py-2 fw-bold" style="cursor: pointer;">
+            <i class="bi bi-ticket-perforated-fill me-2"></i> Comprar Ingressos (Abrir Modal)
+        </label>
+    </nav>
+
+    <!-- Checkbox Hack (Escondido via CSS) -->
+    <input type="checkbox" id="modalToggle" class="modal-checkbox-hack" aria-hidden="true">
+
+    <!-- Estrutura do Modal -->
+    <article class="modal-custom-overlay position-fixed top-0 start-0 w-100 h-100 justify-content-center align-items-center">
+        
+        <!-- Backdrop clicável para fechar ao clicar fora -->
+        <label for="modalToggle" class="modal-custom-backdrop position-absolute top-0 start-0 w-100 h-100"></label>
+
+        <!-- Caixa do Modal -->
+        <section class="modal-custom-content bg-white rounded-4 shadow-lg position-relative overflow-hidden w-100 mx-3" style="max-width: 500px; z-index: 1060;">
+            
+            <!-- Modal Header -->
+            <header class="bg-primary text-white p-3 d-flex justify-content-between align-items-center">
+                <h3 class="h5 m-0 fw-bold d-flex align-items-center">
+                    <i class="bi bi-cart-check-fill me-2"></i> Próximo Jogo — Curuzu
+                </h3>
+                <label for="modalToggle" class="btn-close btn-close-white" aria-label="Fechar" style="cursor: pointer;"></label>
+            </header>
+
+            <!-- Modal Body -->
+            <section class="p-4 text-secondary">
+                <h4 class="h6 fw-bold text-dark mb-2">Paysandu x Remo — Clássico Re-Pa</h4>
+                <p class="m-0 mb-1"><strong>Data:</strong> Próximo Domingo, 16h</p>
+                <p class="m-0 mb-3"><strong>Local:</strong> Estádio Leônidas Castro (Curuzu)</p>
+                <hr>
+                <aside class="alert alert-info py-2 m-0 border-0" role="alert">
+                    <i class="bi bi-star-fill text-warning me-1"></i> Sócio Campeão tem 100% de desconto no check-in!
+                </aside>
+            </section>
+
+            <!-- Modal Footer -->
+            <footer class="p-3 bg-light border-top d-flex justify-content-end gap-2">
+                <label for="modalToggle" class="btn btn-secondary fw-semibold m-0" style="cursor: pointer;">Cancelar</label>
+                <button type="button" class="btn btn-success fw-bold">Confirmar e Pagar</button>
+            </footer>
+
+        </section>
+    </article>
+</section> 
+<!------- ETAPA 7 — RESPONSIVIDADE EXTREMA OK ------->
+
+<!------- ETAPA 8 — SISTEMA DE DESIGN OK ------->
+
+<!------- ETAPA 9 — DASHBOARD ------->
+
+<section class="bg-light py-5 text-dark border-top" id="dashboard">
+    <article class="container-xl">
+        <header class="mb-4 text-center text-lg-start">
+            <h2 class="fw-bold text-primary">Painel Administrativo & Sócio Campeão</h2>
+            <p class="text-muted">Acompanhamento de métricas, transações e gestão interna do clube.</p>
+        </header>
+
+        <!-- Layout em Grid do Bootstrap + Flexbox (Sidebar fixa em desktop, escondida em mobile, sem position absolute) -->
+        <section class="row g-4">
+            
+            <!-- Sidebar (Escondida no mobile com d-none, visível em desktop com d-lg-block) -->
+            <aside class="col-12 col-lg-3 d-none d-lg-block">
+                <section class="p-3 bg-white shadow-sm rounded-4 border">
+                    <h3 class="h5 fw-bold text-primary mb-3"><i class="bi bi-speedometer2 me-2"></i> Menu Gestão</h3>
+                    <nav class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action active fw-bold"><i class="bi bi-house-door me-2"></i> Visão Geral</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-people me-2"></i> Sócios Ativos</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-ticket-perforated me-2"></i> Ingressos Curuzu</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-cash-stack me-2"></i> Financeiro</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-gear me-2"></i> Configurações</a>
+                    </nav>
+                </section>
+            </aside>
+
+            <!-- Conteúdo Principal do Dashboard -->
+            <main class="col-12 col-lg-9">
+                
+                <!-- Cards de Métricas -->
+                <section class="row g-3 mb-4">
+                    <article class="col-12 col-sm-6 col-md-4">
+                        <section class="card border-0 shadow-sm bg-primary text-white h-100 p-3">
+                            <h4 class="card-subtitle mb-2 text-white-50 fs-6">Sócios Ativos</h4>
+                            <h3 class="card-title fw-bold fs-2">25.430</h3>
+                            <span class="badge bg-light text-primary align-self-start mt-2"><i class="bi bi-arrow-up-short"></i> +12% este mês</span>
+                        </section>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-md-4">
+                        <section class="card border-0 shadow-sm bg-success text-white h-100 p-3">
+                            <h4 class="card-subtitle mb-2 text-white-50 fs-6">Arrecadação Jogos</h4>
+                            <h3 class="card-title fw-bold fs-2">R$ 480k</h3>
+                            <span class="badge bg-light text-success align-self-start mt-2"><i class="bi bi-check-circle"></i> Meta atingida</span>
+                        </section>
+                    </article>
+
+                    <article class="col-12 col-sm-12 col-md-4">
+                        <section class="card border-0 shadow-sm bg-dark text-white h-100 p-3">
+                            <h4 class="card-subtitle mb-2 text-white-50 fs-6">Média de Público</h4>
+                            <h3 class="card-title fw-bold fs-2">14.200</h3>
+                            <span class="badge bg-secondary align-self-start mt-2"><i class="bi bi-geo-alt"></i> Estádio da Curuzu</span>
+                        </section>
+                    </article>
+                </section>
+
+                <!-- Alerta do Sistema (Alerts) -->
+                <aside class="alert alert-warning alert-dismissible fade show shadow-sm mb-4 border-0" role="alert">
+                    <h5 class="alert-heading fw-bold fs-6"><i class="bi bi-exclamation-triangle-fill me-2"></i> Atenção à Gestão!</h5>
+                    <p class="m-0 small">A carga de ingressos para o clássico Re-Pa esgota-se esta sexta-feira às 23:59.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </aside>
+
+                <!-- Tabela do Dashboard -->
+                <section class="bg-white shadow-sm rounded-4 p-3 border table-responsive">
+                    <h4 class="h5 fw-bold text-dark mb-3">Últimas Transações do Clube</h4>
+                    <table class="table table-hover align-middle m-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Transação / Sócio</th>
+                                <th scope="col">Método</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-semibold">Mensalidade Sócio Lobo da Fiel</td>
+                                <td>Cartão de Crédito</td>
+                                <td>R$ 59,90</td>
+                                <td><span class="badge bg-success">Aprovado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-semibold">Ingresso Cadeira - Clássico</td>
+                                <td>PIX</td>
+                                <td>R$ 80,00</td>
+                                <td><span class="badge bg-success">Aprovado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-semibold">Camisa Oficial Lojas Lobo</td>
+                                <td>Boleto Bancário</td>
+                                <td>R$ 259,90</td>
+                                <td><span class="badge bg-warning text-dark">Pendente</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </main>
+        </section>
+    </article>
+</section>
+
+<footer class="background text-white pt-5 pb-3 border-top border-primary-subtle" id="contato">
+    <article class="container">
+        <section class="row g-4 justify-content-between">
+            
+            <!-- Coluna 1: Sobre o Clube -->
+            <article class="col-12 col-md-4 text-center text-md-start">
+                <figure class="mb-3">
+                    <img src="images/logo.png" alt="Logo Paysandu" class="logo-paysandu mb-2" style="height: 60px;">
+                    <figcaption class="h5 fw-bold text-white mb-1">Paysandu Sport Club</figcaption>
+                </figure>
+                <p class="text-light small m-0">
+                    <strong>OBS: Site não oficial desenvolvido como exemplo por um torcedor para uma tarefa de estágio.</strong> <br> <br>
+                    Meu instagram: <a href="https://www.instagram.com/ramonalexandria" style="color: black;" target="_blank external"><strong>@RamonAlexandria</strong></a>
+                </p>
+            </article>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <article class="col-12 col-md-4 text-center">
+                <h4 class="h6 fw-bold text-uppercase tracking-wide mb-3">Links Úteis</h4>
+                <nav class="d-flex flex-column gap-2">
+                    <a href="#" class="text-white text-decoration-none text-opacity-75 text-opacity-100-hover">Início</a>
+                    <a href="#noticias" class="text-white text-decoration-none text-opacity-75">Notícias do Papão</a>
+                    <a href="#Classificacao" class="text-white text-decoration-none text-opacity-75">Tabela e Classificação</a>
+                    <a href="#socio" class="text-white text-decoration-none text-opacity-75">Seja Sócio Campeão</a>
+                    <a href="#ingressos" class="text-white text-decoration-none text-opacity-75">Ingressos Online</a>
+                </nav>
+            </article>
+
+            <!-- Coluna 3: Redes Sociais e Oficial -->
+            <article class="col-12 col-md-4 text-center text-md-end">
+                <h4 class="h6 fw-bold text-uppercase tracking-wide mb-3">Redes Sociais Oficiais</h4>
+                <nav class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+                    <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white fs-4" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </nav>
+                <p class="small text-light m-0">Estádio Leônidas Castro (Curuzu)</p>
+                <p class="small text-light m-0">Belém, Pará — Brasil</p>
+            </article>
+
+        </section>
+
+        <!-- Linha de Direitos Autorais -->
+        <hr class="border-light opacity-25 my-4">
+
+        <section class="row align-class-center text-center">
+            <article class="col-12">
+                <p class="small text-white-50 m-0">
+                    Contato: ramonalexandria.oficial@gmail.com
+                </p>
+            </article>
+        </section>
+    </article>
+</footer>
+
+</main>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
